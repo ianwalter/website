@@ -9,6 +9,7 @@ module.exports = {
       options: {
         precision: 8
       }
-    }
+    },
+    'gatsby-plugin-purgecss'
   ]
 }
