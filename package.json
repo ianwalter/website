@@ -5,11 +5,13 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "dotenv": "^6.0.0",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-purgecss": "^2.4.0",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-source-wordpress": "^2.0.93",
     "node-sass": "^4.9.3",
     "react-helmet": "^5.2.0"
   },

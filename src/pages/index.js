@@ -1,13 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+export const pageQuery = graphql`
+  query postsQuery {
+    allWordpressPost(sort: { fields: [date] }) {
+      edges {
+        node {
+          title
+          excerpt
+          slug
+        }
+      }
+    }
+  }
+`
 
-export default IndexPage
+export default ({ data }) => {
+  return (
+    <p className="mt-5">
+      {data.allWordpressPost.edges.map(({ node }) => (
+        <div key={node.slug}>
+          <Link to={node.slug}>
+            <h3>{node.title}</h3>
+          </Link>
+        </div>
+      ))}
+    </p>
+  )
+}

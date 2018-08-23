@@ -1,7 +1,31 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const { resolve } = require('path')
 
- // You can delete this file if you're not using it
+exports.createPages = async ({ graphql, boundActionCreators }) => {
+  const result = await graphql(`
+    {
+      allWordpressPost {
+        edges {
+          node {
+            id
+            slug
+            status
+            template
+            format
+          }
+        }
+      }
+    }
+  `)
+  if (result.errors) {
+    throw result.errors
+  }
+  result.data.allWordpressPost.edges.forEach(edge => {
+    boundActionCreators.createPage({
+      path: edge.node.slug,
+      component: resolve('./src/components/post.js'),
+      context: {
+        id: edge.node.id
+      }
+    })
+  })
+}
