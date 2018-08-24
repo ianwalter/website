@@ -24,9 +24,15 @@ export default ({ data }) => (
   <p className="mt-5">
     {data.allWordpressPost.edges.map(({ node }) => (
       <div key={node.slug}>
-        <Link to={node.slug}>
-          <h3>{node.title}</h3>
-        </Link>
+        {node.format === 'link' ? (
+          <a href={node.acf.external_link} target="_blank">
+            <h3>{node.title}</h3>
+          </a>
+        ) : (
+          <Link to={node.slug}>
+            <h3>{node.title}</h3>
+          </Link>
+        )}
       </div>
     ))}
   </p>
