@@ -2,7 +2,7 @@ import React from 'react'
 
 export const pageQuery = graphql`
   query wordpressPost ($id: String!) {
-    wordpressPost(id: { eq: $id }) {
+    wordpressPost (id: { eq: $id }) {
       title
       content
     }

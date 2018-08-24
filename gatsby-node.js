@@ -9,7 +9,6 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
             id
             slug
             status
-            template
             format
           }
         }

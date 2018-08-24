@@ -18,7 +18,6 @@ module.exports = {
       options: {
         baseUrl: 'wp.iankwalter.com',
         protocol: 'https',
-        useACF: false,
         searchAndReplaceContentUrls: {
           sourceUrl: 'https://wp.iankwalter.com',
           replacementUrl: 'https://iankwalter.com',
