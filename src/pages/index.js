@@ -3,7 +3,8 @@ import Link from 'gatsby-link'
 import format from 'date-fns/format'
 import parse from 'date-fns/parse'
 
-import LinkIcon from '-!svg-react-loader?name=LinkIcon!../assets/link.svg';
+import LinkIcon from '-!svg-react-loader?name=LinkIcon!../assets/link.svg'
+import WriteIcon from '-!svg-react-loader?name=WriteIcon!../assets/write.svg'
 
 export const pageQuery = graphql`
   query postsQuery {
@@ -45,10 +46,13 @@ export default ({ data }) => (
                   <a
                     href={node.acf.external_link}
                     target="_blank">
+
                     <div className="icon">
                       <LinkIcon />
                     </div>
+
                     <span dangerouslySetInnerHTML={{ __html: node.title }} />
+
                   </a>
                 </h3>
 
@@ -60,9 +64,15 @@ export default ({ data }) => (
             ) : (
               <div>
                 <h3>
-                  <Link
-                    to={node.slug}
-                    dangerouslySetInnerHTML={{ __html: node.title }} />
+                  <Link to={node.slug}>
+
+                    <div className="icon">
+                      <WriteIcon />
+                    </div>
+
+                    <span dangerouslySetInnerHTML={{ __html: node.title }} />
+
+                  </Link>
                 </h3>
                 <div
                   className="content mt-3"
