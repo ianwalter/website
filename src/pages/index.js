@@ -1,11 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import format from 'date-fns/format'
+import parse from 'date-fns/parse'
+
+import LinkIcon from '-!svg-react-loader?name=LinkIcon!../assets/link.svg';
 
 export const pageQuery = graphql`
   query postsQuery {
     allWordpressPost (sort: { fields: [date], order: DESC }) {
       edges {
         node {
+          date
           title
           format
           content
@@ -25,29 +30,46 @@ export default ({ data }) => (
     <div className="container">
       {data.allWordpressPost.edges.map(({ node }) => (
         <article className="py-3" key={node.slug}>
-          {node.format === 'link' ? (
-            <div>
-              <h3>
-                <a
-                  href={node.acf.external_link} target="_blank"
-                  dangerouslySetInnerHTML={{ __html: node.title }} />
-              </h3>
-              <div
-                className="content mt-3"
-                dangerouslySetInnerHTML={{ __html: node.content }} />
+          <div style={{ marginLeft: '62px' }}>
+
+            <div className="mb-3">
+              <small className="text-secondary">
+                {format(parse(node.date), 'MMMM D, YYYY')}
+              </small>
             </div>
-          ) : (
-            <div>
-              <h3>
-                <Link
-                  to={node.slug}
-                  dangerouslySetInnerHTML={{ __html: node.title }} />
-              </h3>
-              <div
-                className="content mt-3"
-                dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )}
+
+            {node.format === 'link' ? (
+              <div>
+
+                <h3>
+                  <a
+                    href={node.acf.external_link}
+                    target="_blank">
+                    <div className="icon">
+                      <LinkIcon />
+                    </div>
+                    <span dangerouslySetInnerHTML={{ __html: node.title }} />
+                  </a>
+                </h3>
+
+                <div
+                  className="content mt-3"
+                  dangerouslySetInnerHTML={{ __html: node.content }} />
+
+              </div>
+            ) : (
+              <div>
+                <h3>
+                  <Link
+                    to={node.slug}
+                    dangerouslySetInnerHTML={{ __html: node.title }} />
+                </h3>
+                <div
+                  className="content mt-3"
+                  dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </div>
+            )}
+          </div>
         </article>
       ))}
     </div>

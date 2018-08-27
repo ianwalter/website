@@ -15,7 +15,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <main class="container-fluid">
+    <main className="container-fluid">
       {children()}
     </main>
   </div>
