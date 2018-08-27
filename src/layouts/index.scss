@@ -1,10 +1,28 @@
 // Load Source Sans Pro from Google Fonts.
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 
 // Colors
 $primary: #3ac569;
-$light: #f4f5f9;
+$light: #F4F5F9;
+$dark: #252525;
+$body-bg: $dark;
+$body-color: $light;
+$link-hover-decoration: none;
 
 $font-family-sans-serif: 'Montserrat', sans-serif;
 
 @import '~bootstrap/scss/bootstrap';
+
+.navbar {
+  font-weight: 500;
+}
+
+article h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+article .content {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 300;
+}
