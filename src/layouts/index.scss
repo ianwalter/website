@@ -8,8 +8,10 @@ $light: #F4F5F9;
 $dark: #252525;
 $body-bg: $dark;
 $body-color: $light;
+$nav-pills-link-active-color: $dark;
+//
 $link-hover-decoration: none;
-
+// $nav-link-padding-x: 1rem;
 $font-family-sans-serif: 'Montserrat', sans-serif;
 
 @import '~bootstrap/scss/bootstrap';
