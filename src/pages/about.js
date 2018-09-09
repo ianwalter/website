@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import avatar from '../assets/ian.jpg'
 
 export default () => (
@@ -15,7 +14,9 @@ export default () => (
 
       I'm a professional software developer who loves creating
       things. I mostly work on web applications and I'm currently helping
-      {' '}<a href="https://binx.health" className="fontWeight400">Binx Health</a>{' '}
+      {' '}<a href="https://binx.health" className="fontWeight400">
+        Binx Health
+      </a>{' '}
       create an application to make it easy for people to get accurate at-home
       testing for sextually-transmitted infections.
 
@@ -28,10 +29,23 @@ export default () => (
 
     <p className="content">
       This is my personal website and it's built using
-      {' '}<a href="" className="fontWeight400">GatsbyJS</a> and
-      {' '}<a href="" className="fontWeight400">Bootstrap</a>. It's hosted on
-      {' '}<a href="" className="fontWeight400">Netlify</a> and you can find the source code on
-      {' '}<a href="" className="fontWeight400">GitHub</a>.
+      {' '}<a href="https://www.gatsbyjs.org" className="fontWeight400">
+        GatsbyJS
+      </a>{' '}
+      and
+      {' '}<a href="http://getbootstrap.com" className="fontWeight400">
+        Bootstrap
+      </a>
+      . It's hosted on
+      {' '}<a href="https://www.netlify.com" className="fontWeight400">
+        Netlify
+      </a>{' '}
+      and you can find the source code on
+      {' '}<a
+        href="https://github.com/ianwalter/website"
+        className="fontWeight400">
+        GitHub
+      </a>.
     </p>
 
   </div>

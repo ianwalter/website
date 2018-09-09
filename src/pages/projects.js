@@ -76,7 +76,7 @@ export default () => (
 
     <div className="row">
       {authored.map(project => (
-        <div className="col-4">
+        <div className="col-12 col-md-6 col-lg-4">
           <a href={project.url} className="text-white" target="_window">
             <div className="card my-3">
               <div
@@ -109,8 +109,8 @@ export default () => (
 
     <div>
       {contributed.map(project => (
-        <div>
-          <a href={project.url} target="_window">
+        <div className="p-1">
+          <a href={project.url} target="_window" className="fontWeight500">
             {project.name}
           </a>
           {' '} - <small>{project.description}</small>
