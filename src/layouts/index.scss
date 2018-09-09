@@ -55,8 +55,13 @@ article a:hover svg {
   font-weight: 500;
 }
 
-.card {
+.project .card {
   background-color: #323232;
+  transition: .2s transform ease-in-out;
+
+  &:hover {
+    transform: scale3d(0.96, 0.96, 1);
+  }
 }
 
 hr {

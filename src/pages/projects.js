@@ -77,7 +77,7 @@ export default () => (
     <div className="row">
       {authored.map(project => (
         <div className="col-12 col-md-6 col-lg-4">
-          <a href={project.url} className="text-white" target="_window">
+          <a href={project.url} className="project text-white" target="_window">
             <div className="card my-3">
               <div
                 className="card-body"
