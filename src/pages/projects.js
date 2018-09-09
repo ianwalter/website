@@ -59,6 +59,27 @@ const contributed = [
       A modular minifier, built on top of the PostCSS ecosystem
     `,
     url: 'https://github.com/cssnano/cssnano'
+  },
+  {
+    name: 'cobra',
+    description: `
+      A Commander for modern Go CLI interactions
+    `,
+    url: 'https://github.com/spf13/cobra'
+  },
+  {
+    name: 'prompts',
+    description: `
+      Lightweight, beautiful and user-friendly interactive prompts
+    `,
+    url: 'https://github.com/terkelg/prompts'
+  },
+  {
+    name: 'surge',
+    description: `
+      CLI for the surge.sh CDN
+    `,
+    url: 'https://github.com/sintaxi/surge'
   }
 ]
 
@@ -107,7 +128,7 @@ export default () => (
       </div>
     </div>
 
-    <div>
+    <div className="mb-5">
       {contributed.map(project => (
         <div className="p-1">
           <a href={project.url} target="_window" className="fontWeight500">
