@@ -15,14 +15,14 @@ export default () => (
 
       I'm a professional software developer who loves creating
       things. I mostly work on web applications and I'm currently helping
-      {' '}<a href="https://getbinx.com" className="fontWeight400">Binx Health</a>{' '}
+      {' '}<a href="https://binx.health" className="fontWeight400">Binx Health</a>{' '}
       create an application to make it easy for people to get accurate at-home
       testing for sextually-transmitted infections.
 
       I like working on side projects and contributing to open source software
       as much as I can.
-      {' '}<a href="" className="fontWeight400">Click here</a> to take a look at some of the projects I'm
-      working on.
+      {' '}<a href="/projects" className="fontWeight400">Click here</a>{' '}
+      to take a look at some of the projects I'm working on.
 
     </p>
 
