@@ -49,6 +49,40 @@ const authored = [
     `,
     color: '#9055A2',
     url: 'https://github.com/ianwalter/imgex'
+  },
+  {
+    name: 'sled',
+    description: `
+      A JavaScript micro-library for animating an element's height to create a
+      slide effect
+    `,
+    color: '#a5dff9',
+    url: 'https://github.com/ianwalter/sled'
+  },
+  {
+    name: 'base-error',
+    description: `
+      A general base Error class that can be extended to create custom Error
+      classes
+    `,
+    color: '#EE7785',
+    url: 'https://github.com/ianwalter/base-error'
+  },
+  {
+    name: 'promise-complete',
+    description: `
+      Call all promises in an array whether they resolve or reject
+    `,
+    color: '#6AAFE6',
+    url: 'https://github.com/ianwalter/promise-complete'
+  },
+  {
+    name: 'execa-git',
+    description: `
+      A wrapper around execa to help run git commands
+    `,
+    color: '#99f19e',
+    url: 'https://github.com/ianwalter/execa-git'
   }
 ]
 
