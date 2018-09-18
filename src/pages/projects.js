@@ -65,7 +65,7 @@ const authored = [
       A general base Error class that can be extended to create custom Error
       classes
     `,
-    color: '#EE7785',
+    color: '#ee6e9f',
     url: 'https://github.com/ianwalter/base-error'
   },
   {
