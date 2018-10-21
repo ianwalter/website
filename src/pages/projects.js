@@ -35,12 +35,12 @@ const authored = [
     url: 'https://github.com/ianwalter/relay'
   },
   {
-    name: 'peregrin',
+    name: 'blueline',
     description: `
       Toolkit for converting API Blueprint files to JSON and consuming that JSON
     `,
     color: '#F68657',
-    url: 'https://github.com/ianwalter/peregrin'
+    url: 'https://github.com/ianwalter/blueline'
   },
   {
     name: 'imgex',
@@ -88,6 +88,14 @@ const authored = [
 
 const contributed = [
   {
+    name: 'bootstrap',
+    description: `
+      The most popular HTML, CSS, and JavaScript framework for developing
+      responsive, mobile first projects on the web.
+    `,
+    url: 'http://getbootstrap.com'
+  },
+  {
     name: 'cssnano',
     description: `
       A modular minifier, built on top of the PostCSS ecosystem
@@ -114,6 +122,28 @@ const contributed = [
       CLI for the surge.sh CDN
     `,
     url: 'https://github.com/sintaxi/surge'
+  },
+  {
+    name: 'python-goose',
+    description: `
+      Html Content / Article Extractor, web scrapping lib in Python
+    `,
+    url: 'https://github.com/grangier/python-goose'
+  },
+  {
+    name: 'django-import-export',
+    description: `
+      Django application and library for importing and exporting data with admin
+      integration
+    `,
+    url: 'https://github.com/django-import-export/django-import-export'
+  },
+  {
+    name: 'node-saucelabs',
+    description: `
+      A wrapper around saucelabs API
+    `,
+    url: 'https://github.com/danjenkins/node-saucelabs'
   }
 ]
 
