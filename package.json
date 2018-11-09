@@ -17,10 +17,7 @@
     "node-sass": "^4.9.3",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "license": "Apache 2.0 with Commons Clause",
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
